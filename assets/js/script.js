@@ -152,16 +152,19 @@ console.log(`n è divisibile per 3: ${n % 3 === 0}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const c = 5;
-const d = 5;
-const e = 5; 
-const perimetro = c + d + e;
+const c = 12;
+const d = 18;
+const e = 10;
+
+let perimetro = c + d + e;
 let tipo;
 
 if (c === d && d === e) {
   tipo = "equilatero";
+  console.log(`Triangolo ${tipo}, perimetro ${perimetro}`);
 } else if (c === d || c === e || d === e) {
   tipo = "isoscele";
+  console.log(`Triangolo ${tipo}, perimetro ${perimetro}`);
 } else {
   tipo = "scaleno";
 }
